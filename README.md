@@ -1,5 +1,8 @@
-# Welcome to the [ICON 2024](https://www.au-kbc.org/icon2024/) shared task! on *Decoding Fake Narratives in Spreading Hateful Stories (Faux-Hate)*
+<div style="background-color: black; color: white; padding: 10px; text-align: center;">
 
+  # Welcome to the [ICON 2024](https://www.au-kbc.org/icon2024/) shared task on *Decoding Fake Narratives in Spreading Hateful Stories (Faux-Hate)*
+
+</div>
 ---
 
 <div style="background-color: black; color: white; padding: 10px;">
