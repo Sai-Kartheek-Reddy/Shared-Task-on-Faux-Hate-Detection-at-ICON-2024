@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to the <a href="https://www.au-kbc.org/icon2024/" target="_blank" style="color: green;">ICON 2024</a> shared task on <em>Decoding Fake Narratives in Spreading Hateful Stories (Faux-Hate)</em></h1>
+        <h1>Welcome to the <a href="https://www.au-kbc.org/icon2024/" target="_blank" style="text-decoration: underline;">ICON 2024</a> shared task on <em>Decoding Fake Narratives in Spreading Hateful Stories (Faux-Hate)</em></h1>
     </header>
 
     <section id="introduction">
@@ -33,17 +33,23 @@
 
         <h3>Sub-tasks:</h3>
         <ol>
-            <li><strong>Binary Faux-Hate Detection</strong>:
+            <li>
+                <strong>Task A -- Binary Faux-Hate Detection</strong>
+                <p>Participants will receive a dataset containing text samples, each labeled with:</p>
                 <ul>
-                    <li><strong>Fake</strong>: Whether the content is fake (1) or real (0).</li>
-                    <li><strong>Hate</strong>: Whether the content is hate speech (1) or not (0).</li>
+                    <li><strong>Fake:</strong> Binary label indicating if the content is fake (1) or real (0).</li>
+                    <li><strong>Hate:</strong> Binary label indicating if the content is hate speech (1) or not (0).</li>
                 </ul>
+                <p>The objective of this sub-task is to develop a single model that outputs both the fake and hate labels for each text sample.</p>
             </li>
-            <li><strong>Target and Severity Prediction</strong>:
+            <li>
+                <strong>Task B - Target and Severity Prediction</strong>
+                <p>Participants will receive a dataset containing text samples, each labeled with:</p>
                 <ul>
-                    <li><strong>Target</strong>: The subject of the hate (Individual (I), Organization (O), or Religion (R)).</li>
-                    <li><strong>Severity</strong>: The degree of hate (Low (L), Medium (M), or High (H)).</li>
+                    <li><strong>Target:</strong> Categorical label indicating the target of the content (Individual (I), Organization (O), and Religion (R)).</li>
+                    <li><strong>Severity:</strong> Categorical label indicating the severity of the content (Low (L), Medium (M), and High (H)).</li>
                 </ul>
+                <p>The objective of this sub-task is to develop a single model that generates both the target and severity labels for a given text sample.</p>
             </li>
         </ol>
     </section>
@@ -79,6 +85,16 @@
         </table>
     </section>
 
+    <section id="evaluation-metrics">
+        <h2>Evaluation Metrics</h2>
+        <p>We will use the Macro F1 Score as the primary evaluation metric for both Task A and Task B.</p>
+    </section>
+
+    <section id="registration">
+        <h2>Registration</h2>
+        <p>To participate, please fill out the registration form. <a href="#">Click here to register</a> (link will be provided soon).</p>
+    </section>
+
     <section id="timeline">
         <h2>Timeline</h2>
         <ul>
@@ -90,6 +106,15 @@
             <li>10th Dec - Acceptance notification</li>
             <li>15th Dec - Camera-ready submission deadline</li>
         </ul>
+    </section>
+
+    <section id="citation" style="margin-top: 20px;">
+        <h2>Citation Requirement</h2>
+        <p>All participants are required to cite the following article in their working notes:</p>
+        <blockquote>
+            Biradar, S., Saumya, S. & Chauhan, A. Faux Hate: unravelling the web of fake narratives in spreading hateful stories: a multi-label and multi-class dataset in cross-lingual Hindi-English code-mixed text. Lang Resources & Evaluation (2024). <a href="https://doi.org/10.1007/s10579-024-09732-0" target="_blank">https://doi.org/10.1007/s10579-024-09732-0</a>
+        </blockquote>
+        <p>This citation is essential for acknowledging the foundational work that contributes to the shared task and ensuring proper attribution in your research.</p>
     </section>
 
     <section id="organizers" style="color: #4B0082;">
