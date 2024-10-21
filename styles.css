@@ -60,3 +60,16 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+table {
+    width: 50%; /* Default for large screens */
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table */
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 75%; /* Adjust width for smaller screens */
+    }
+}
+
