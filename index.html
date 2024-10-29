@@ -12,141 +12,151 @@
         <h1>Welcome to the <a href="https://www.au-kbc.org/icon2024/" target="_blank" style="text-decoration: underline; color: white;">ICON 2024</a> shared task on <em>Decoding Fake Narratives in Spreading Hateful Stories (Faux-Hate)</em></h1>
     </header>
 
-    <main>
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>Social media has revolutionized the way we communicate, but it has also opened the door for the rapid spread of harmful content, including hate speech. Hate speech on social platforms not only affects individuals and communities but can also escalate into violence and societal harm. In recent years, there has been a growing concern about the intersection of <strong>hate speech</strong> and <strong>fake narratives</strong>, which has prompted the need for specialized methods to detect and curb their spread.</p>
-            <h3>What is Faux-Hate?</h3>
-            <p>Briefly, Faux-Hate is the generation of <strong>hate speech</strong> driven by <strong>fake narratives</strong>. This task focuses on identifying comments that blend fake information with hateful language to mislead and provoke individuals, exacerbating the impact of hate speech. The goal of this shared task is to explore how fake narratives can contribute to the propagation of hate and to develop models that can detect such instances within code-mixed Hindi-English social media text.</p>
-        </section>
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Social media has revolutionized the way we communicate, but it has also opened the door for the rapid spread of harmful content, including hate speech. Hate speech on social platforms not only affects individuals and communities but can also escalate into violence and societal harm. In recent years, there has been a growing concern about the intersection of <strong>hate speech</strong> and <strong>fake narratives</strong>, which has prompted the need for specialized methods to detect and curb their spread.</p>
+        <h3>What is Faux-Hate?</h3>
+        <p>Briefly, Faux-Hate is the generation of <strong>hate speech</strong> driven by <strong>fake narratives</strong>. This task focuses on identifying comments that blend fake information with hateful language to mislead and provoke individuals, exacerbating the impact of hate speech. The goal of this shared task is to explore how fake narratives can contribute to the propagation of hate and to develop models that can detect such instances within code-mixed Hindi-English social media text.</p>
+    </section>
 
-        <section id="task-overview">
-            <h2>Task Overview</h2>
-            <p>The <strong>Faux-Hate</strong> shared task is designed to challenge participants to tackle both <strong>fake</strong> and <strong>hate</strong> detection in social media comments, with additional emphasis on identifying the <strong>target</strong> and <strong>severity</strong> of hateful speech.</p>
+    <section id="task-overview">
+        <h2>Task Overview</h2>
+        <p>The <strong>Faux-Hate</strong> shared task is designed to challenge participants to tackle both <strong>fake</strong> and <strong>hate</strong> detection in social media comments, with additional emphasis on identifying the <strong>target</strong> and <strong>severity</strong> of hateful speech.</p>
 
-            <h3>Key Concepts:</h3>
-            <ul>
-                <li><strong>Fake</strong>: Misinformation deliberately spread with the intention to mislead.</li>
-                <li><strong>Hate</strong>: Speech intended to marginalize individuals or groups based on attributes like religion, ethnicity, or political beliefs.</li>
-                <li><strong>Target</strong>: The intended subject of the hate speech, classified as either an individual, organization, or religion.</li>
-                <li><strong>Severity</strong>: The intensity of the hate speech, ranging from low (disagreement) to high (advocating violence).</li>
-            </ul>
+        <h3>Key Concepts:</h3>
+        <ul>
+            <li><strong>Fake</strong>: Misinformation deliberately spread with the intention to mislead.</li>
+            <li><strong>Hate</strong>: Speech intended to marginalize individuals or groups based on attributes like religion, ethnicity, or political beliefs.</li>
+            <li><strong>Target</strong>: The intended subject of the hate speech, classified as either an individual, organization, or religion.</li>
+            <li><strong>Severity</strong>: The intensity of the hate speech, ranging from low (disagreement) to high (advocating violence).</li>
+        </ul>
 
-            <h3>Sub-tasks:</h3>
-            <ol>
-                <li>
-                    <strong>Task A - Binary Faux-Hate Detection</strong>
-                    <p>Participants will receive a dataset containing text samples, each labeled with:</p>
-                    <ul>
-                        <li><strong>Fake:</strong> Binary label indicating if the content is fake (1) or real (0).</li>
-                        <li><strong>Hate:</strong> Binary label indicating if the content is hate speech (1) or not (0).</li>
-                    </ul>
-                    <p>The objective of this sub-task is to develop a single <b>multi-tasking model</b> that outputs both the fake and hate labels for each text sample.</p>
-                </li>
-                <li>
-                    <strong>Task B - Target and Severity Prediction</strong>
-                    <p>Participants will receive a dataset containing text samples, each labeled with:</p>
-                    <ul>
-                        <li><strong>Target:</strong> Categorical label indicating the target of the content (Individual (I), Organization (O), and Religion (R)).</li>
-                        <li><strong>Severity:</strong> Categorical label indicating the severity of the content (Low (L), Medium (M), and High (H)).</li>
-                    </ul>
-                    <p>The objective of this sub-task is to develop a <b>single model</b> that generates both the target and severity labels for a given text sample.</p>
-                </li>
-            </ol>
-        </section>
+        <h3>Sub-tasks:</h3>
+        <ol>
+            <li>
+                <strong>Task A - Binary Faux-Hate Detection</strong>
+                <p>Participants will receive a dataset containing text samples, each labeled with:</p>
+                <ul>
+                    <li><strong>Fake:</strong> Binary label indicating if the content is fake (1) or real (0).</li>
+                    <li><strong>Hate:</strong> Binary label indicating if the content is hate speech (1) or not (0).</li>
+                </ul>
+                <p>The objective of this sub-task is to develop a single <b>multi-tasking model</b> that outputs both the fake and hate labels for each text sample.</p>
+            </li>
+            <li>
+                <strong>Task B - Target and Severity Prediction</strong>
+                <p>Participants will receive a dataset containing text samples, each labeled with:</p>
+                <ul>
+                    <li><strong>Target:</strong> Categorical label indicating the target of the content (Individual (I), Organization (O), and Religion (R)).</li>
+                    <li><strong>Severity:</strong> Categorical label indicating the severity of the content (Low (L), Medium (M), and High (H)).</li>
+                </ul>
+                <p>The objective of this sub-task is to develop a <b>single model</b> that generates both the target and severity labels for a given text sample.</p>
+            </li>
+        </ol>
+    </section>
 
-        <section id="dataset">
-            <h2>Dataset</h2>
-            <p>The provided dataset is divided into three sections, each set will be available for download on the respective release dates.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dataset</th>
-                        <th>Date of Release</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Train</td>
-                        <td>28th October</td>
-                    </tr>
-                    <tr>
-                        <td>Validation</td>
-                        <td>13th November</td>
-                    </tr>
-                    <tr>
-                        <td>Test</td>
-                        <td>18th November</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <section id="dataset">
+    <h2>Dataset</h2>
+    <p>The provided dataset is divided into three sections, each set will be available for download on the respective release dates.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Dataset</th>
+                <th>Date of Release</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Train</td>
+                <td>28th October</td>
+            </tr>
+            <tr>
+                <td>Validation</td>
+                <td>13th November</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>18th November</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
-        <section id="evaluation-metrics">
-            <h2>Evaluation Metrics</h2>
-            <p>All test results should be submitted through the Google Form, accessible at (link will be provided later).</p>
-            
-            <h3>Submission Format:</h3>
-            <p>
-                Each team must submit a zip file named <b>teamname.zip</b>, containing CSV files for both Task A and Task B. Include one or two prediction files per task, named as <b>teamname_TaskA_runX.csv</b> or <b>teamname_TaskB_runX.csv</b> (replace X with run number) for clarity.
-            </p>
-            
-            <h3>Evaluation Metrics:</h3>
-            <p>
-                Submissions will be evaluated based on the <b>Macro F1 Score</b> as the primary metric.
-            </p>
+    <section id="evaluation-metrics">
+    <h2>Evaluation Metrics</h2>
+    <p>All test results should be submitted through the Google Form, accessible at (link will be provided later).</p>
+    
+    <h3>Submission Format:</h3>
+    <p>
+        Each team must submit a zip file named <b>teamname.zip</b>, containing CSV files for both Task A and Task B. Include one or two prediction files per task, named as <b>teamname_TaskA_runX.csv</b> or <b>teamname_TaskB_runX.csv</b> (replace X with run number) for clarity.
+    </p>
+    
+    <h3>Evaluation Metrics:</h3>
+    <p>
+        Submissions will be evaluated based on the <b>Macro F1 Score</b> as the primary metric.
+    </p>
 
-            <h3>Rank List:</h3>
-            <p>
-                The rank list will be generated based on the scores from the evaluation metrics.
-            </p>
-        </section>
+    <h3>Rank List:</h3>
+    <p>
+        The rank list will be generated based on the scores from the evaluation metrics.
+    </p>
+    </section>
 
-        <section id="registration">
-            <h2>Registration</h2>
-            <p>To participate, please fill out the registration form. <a href="https://forms.gle/XZaJr4VXP5DhgfS78">Click here to register.</a></p>
-            <p>Upon successful registration, participants will receive the dataset via email. Please ensure your email address is valid and accessible during the competition.</p>
-        </section>
 
-        <section id="timeline">
-            <h2>Timeline</h2>
-            <ul>
-                <li>28th Oct - Open track website and training data release</li>
-                <li>13th Nov - Validation data release</li>
-                <li>18th Nov - Test data release</li>
-                <li>20th Nov - Run submission deadline</li>
-                <li>21st Nov - Results announced</li>
-                <li>28th Nov - Working notes submission deadline</li>
-                <li>10th Dec - Acceptance notification</li>
-                <li>15th Dec - Camera-ready submission deadline</li>
-            </ul>
-        </section>
 
-        <section id="organizers">
-            <h2>Organizers</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/shankar-biradar-bb613826/" target="_blank">Shankar Biradar</a> (KLE Technological University)</li>
-                <li><a href="https://www.linkedin.com/in/sai-kartheek-reddy-kasu/" target="_blank">Kasu Sai Kartheek Reddy</a> (Indian Institute of Information Technology Dharwad)</li>
-                <li><a href="https://scholar.google.com/citations?user=QItKUEMAAAAJ&hl=en" target="_blank">Sunil Saumya</a> (Indian Institute of Information Technology Dharwad)</li>
-                <li><a href="http://faculty.iiitd.ac.in/~shad.akhtar/" target="_blank">Md. Shad Akhtar</a> (Indraprastha Institute of Information Technology Delhi)</li>
-            </ul>
-        </section>
+    <section id="registration">
+        <h2>Registration</h2>
+        <p>To participate, please fill out the registration form. <a href="https://forms.gle/XZaJr4VXP5DhgfS78">Click here to register.</a></p>
+        <p>Upon successful registration, participants will receive the dataset via email. Please ensure your email address is valid and accessible during the competition.</p>
+    </section>
 
-        <section id="citation">
-            <h2>Citation Requirement for Participants</h2>
-            <p>All participants are required to cite the following article in their working notes:</p>
-            <div class="citation-block">
-                <pre>
+
+    <section id="timeline">
+        <h2>Timeline</h2>
+        <ul>
+            <li>28th Oct - Open track website and training data release</li>
+            <li>13th Nov - Validation data release</li>
+            <li>18th Nov - Test data release</li>
+            <li>20th Nov - Run submission deadline</li>
+            <li>21st Nov - Results announced</li>
+            <li>28th Nov - Working notes submission deadline</li>
+            <li>10th Dec - Acceptance notification</li>
+            <li>15th Dec - Camera-ready submission deadline</li>
+        </ul>
+    </section>
+
+    <section id="organizers">
+    <h2>Organizers</h2>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/shankar-biradar-bb613826/" target="_blank" style="color: #00008B;">Shankar Biradar</a> <span style="color: black;">(KLE Technological University)</span></li>
+        <li><a href="https://www.linkedin.com/in/sai-kartheek-reddy-kasu/" target="_blank" style="color: #00008B;">Kasu Sai Kartheek Reddy</a> <span style="color: black;">(Indian Institute of Information Technology Dharwad)</span></li>
+        <li><a href="https://scholar.google.com/citations?user=QItKUEMAAAAJ&hl=en" target="_blank" style="color: #00008B;">Sunil Saumya</a> <span style="color: black;">(Indian Institute of Information Technology Dharwad)</span></li>
+        <li><a href="http://faculty.iiitd.ac.in/~shad.akhtar/" target="_blank" style="color: #00008B;">Md. Shad Akhtar</a> <span style="color: black;">(Indraprastha Institute of Information Technology Delhi)</span></li>
+    </ul>
+    </section>
+
+
+<section id="citation" style="margin-top: 20px;">
+    <h2>Citation Requirement for Participants</h2>
+    <p>All participants are required to cite the following article in their working notes:</p>
+    <div class="citation-block">
+        <pre>
 @article{biradar2024faux,
   title={Faux Hate: Unravelling the Web of Fake Narratives in Spreading Hateful Stories: 
          A Multi-Label and Multi-Class Dataset in Cross-Lingual Hindi-English Code-Mixed Text},
-  author={Biradar, Shankar and Saumya, Sunil and Chauhan, Charmi and Akhtar, Shad Md.},
-  journal={ICON-2024},
-  year={2024}
+  author={Biradar, Shankar and Saumya, Sunil and Chauhan, Arun},
+  journal={Language Resources and Evaluation},
+  pages={1--32},
+  year={2024},
+  publisher={Springer}
 }
-                </pre>
-            </div>
-        </section>
-    </main>
-</body>
-</html>
+        </pre>
+    </div>
+    <p>This citation is essential for acknowledging the foundational work that contributes to the shared task and ensuring proper attribution in your research.</p>
+</section>
+    
+<section id="contact" style="margin-top: 20px;">
+    <h2>Contact</h2>
+    <p>For queries, please reach out to the following:</p>
+    <p>Shankar Biradar: shankar@iiitdwd.ac.in</p>
+    <p>We’re here to help and look forward to your participation!</p>
+</section>
