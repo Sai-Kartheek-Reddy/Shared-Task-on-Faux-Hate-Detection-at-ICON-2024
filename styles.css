@@ -1,72 +1,91 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
 header {
-    background-color: #00008B; /* Blue background for header */
-    color: white; /* White text for the header */
-    padding: 15px;
+    background-color: #0078D7;
+    color: white;
     text-align: center;
+    padding: 1.5em;
 }
 
-h1 {
-    color: white; /* Ensure the main heading text remains white */
+header h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 h2, h3 {
-    color: #0000FF; /* Blue color for subheadings */
+    color: #0078D7;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+ul, ol {
+    margin: 10px 0 20px 20px;
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 table {
-    width: 75%;
-    margin: auto;
+    width: 100%;
     border-collapse: collapse;
+    margin-top: 10px;
 }
 
 table, th, td {
-    border: 1px solid #0000FF; /* Blue borders for table */
+    border: 1px solid #ddd;
 }
 
 th, td {
     padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #0078D7;
+    color: white;
+}
+
+a {
+    color: #0078D7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0078D7;
+    color: white;
     text-align: center;
-}
-
-ul, ol {
-    margin-left: 20px;
-}
-
-pre {
-    background-color: whitesmoke;
-    padding: 10px;
-    overflow-x: auto;
-    white-space: pre-wrap;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 1em;
+    margin-top: 20px;
 }
 
 .citation-block {
-    max-width: 100%;
-}
-
-@media (max-width: 768px) {
-    table {
-        width: 90%;
-    }
-
-    .citation-block pre {
-        font-size: 0.9em;
-    }
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-left: 5px solid #0078D7;
+    font-family: monospace;
 }
